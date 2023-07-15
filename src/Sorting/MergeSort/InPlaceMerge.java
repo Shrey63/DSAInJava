@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InPlaceMerge {
     public static void main(String[] args) {
-        int[] b={35,60,70,89,20,25,30};
+        int[] b={4,3,2};
         mergeSort(b,0,b.length);
         System.out.println(Arrays.toString(b));
     }
