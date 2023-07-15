@@ -5,7 +5,7 @@ public class SkipAString {
         System.out.println(skipString(s,rm,"Shreya"));
     }
 
-    private static String skipString(String s, String rm,String nrm) {
+    private static String skipString(String  s, String rm,String nrm) {
         if(s.isEmpty())
             return "";
         if(s.startsWith(rm) && !s.startsWith(nrm))
