@@ -41,14 +41,26 @@ public class SudokuSolver {
                 if (isSafe(board, r, c, nums)) {
                     board[r][c] =Character.forDigit(nums,10);
                     solve(board);
-
+                    if(!isComplete(board))
+                        board[r][c] ='.';
                 }
-                board[r][c] ='.';
+
 
             }
         }
 
+        private static boolean isComplete(char[][] c)
+        {
+            for (int i = 0; i < c.length; i++) {
+                for (int j = 0; j < c.length; j++) {
+                    if(c[i][j]=='.')
+                        return false;
 
+                }
+
+            }
+            return true;
+        }
         private static boolean isSafe(char[][] board, int r, int c, int nums) {
 
             //check row
