@@ -15,7 +15,6 @@ public class CyclicSort {
             if(a[i]!=i+1)
             {
                 int pos=a[i]-1;
-
                 // swap element
                 int temp=a[i];
                 a[i]=a[pos];
